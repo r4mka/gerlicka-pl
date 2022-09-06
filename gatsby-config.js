@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `gerlicka-pl`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Klaudia Gerlicka Make-Up and Brows`,
+    siteUrl: `https://www.gerlicka.pl`,
   },
-  plugins: [],
+  plugins: [`gatsby-plugin-emotion`],
 }

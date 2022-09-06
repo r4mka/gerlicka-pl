@@ -7,7 +7,7 @@ const Main = styled.main(({ theme }) => css`
   flex-direction: column;
   justify-content: space-between;
   background-color: ${theme.colors.beige};
-  padding-bottom: 50px;
+  padding-bottom: 120px;
 `)
 
 const Logo = styled.img`

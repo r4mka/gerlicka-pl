@@ -22,6 +22,7 @@
     "facepaint": "^1.2.1",
     "gatsby": "^4.22.0",
     "gatsby-plugin-emotion": "^7.22.0",
+    "gatsby-plugin-manifest": "^4.22.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   },

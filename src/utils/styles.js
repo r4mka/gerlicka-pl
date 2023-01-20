@@ -17,7 +17,7 @@ const colors = {
   black: '#000',
 };
 
-export const theme = { colors };
+export const theme = { colors, breakpoints };
 
 export const globalStyle = css`
   ${emotionNormalize}

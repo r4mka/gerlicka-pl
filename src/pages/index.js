@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Global, styled, mq, ThemeProvider, css, theme, globalStyle } from '../utils/styles';
 import { FacebookIcon, GoogleMapsIcon, Grid, InstagramIcon, MessengerIcon } from '../components';
+import { Header } from '../components/Header';
 
 const Main = styled.main(
   ({ theme }) => css`
@@ -32,6 +33,7 @@ const IndexPage = () => {
   return (
     <ThemeProvider theme={theme}>
       <Global styles={globalStyle} />
+      <Header />
       <Main>
         <Grid display="flex" flexDirection="column" justifyContent="space-between">
           <Logo alt="Logo" src="/logo.png" />

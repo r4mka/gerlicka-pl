@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Global, styled, mq, ThemeProvider, css, theme, globalStyle } from '../utils/styles';
-import { FacebookIcon, GoogleMapsIcon, InstagramIcon, MessengerIcon } from '../components';
+import { FacebookIcon, GoogleMapsIcon, Grid, InstagramIcon, MessengerIcon } from '../components';
 
 const Main = styled.main(
   ({ theme }) => css`
@@ -33,21 +33,23 @@ const IndexPage = () => {
     <ThemeProvider theme={theme}>
       <Global styles={globalStyle} />
       <Main>
-        <Logo alt="Logo" src="/logo.png" />
-        <SocialMedia>
-          <a href="https://m.me/KlaudiaGerlicka/" target="_blank" rel="noreferrer">
-            <MessengerIcon />
-          </a>
-          <a href="https://m.facebook.com/KlaudiaGerlicka/" target="_blank" rel="noreferrer">
-            <FacebookIcon />
-          </a>
-          <a href="https://www.Instagram.com/klaudia_gerlicka" target="_blank" rel="noreferrer">
-            <InstagramIcon />
-          </a>
-          <a href="https://goo.gl/maps/yRhgbtQghw4Khc9N9" target="_blank" rel="noreferrer">
-            <GoogleMapsIcon />
-          </a>
-        </SocialMedia>
+        <Grid display="flex" flexDirection="column" justifyContent="space-between">
+          <Logo alt="Logo" src="/logo.png" />
+          <SocialMedia>
+            <a href="https://m.me/KlaudiaGerlicka/" target="_blank" rel="noreferrer">
+              <MessengerIcon />
+            </a>
+            <a href="https://m.facebook.com/KlaudiaGerlicka/" target="_blank" rel="noreferrer">
+              <FacebookIcon />
+            </a>
+            <a href="https://www.Instagram.com/klaudia_gerlicka" target="_blank" rel="noreferrer">
+              <InstagramIcon />
+            </a>
+            <a href="https://goo.gl/maps/yRhgbtQghw4Khc9N9" target="_blank" rel="noreferrer">
+              <GoogleMapsIcon />
+            </a>
+          </SocialMedia>
+        </Grid>
       </Main>
     </ThemeProvider>
   );
